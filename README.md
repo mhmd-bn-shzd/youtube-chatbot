@@ -1,8 +1,8 @@
 # YouTube RAG Chatbot
 
-This project is a Retrieval-Augmented Generation (RAG) chatbot for YouTube videos. It fetches a video transcript, splits it into chunks, stores embeddings in a FAISS index, retrieves the most relevant transcript chunks for a question, and generates an answer using an Ollama local LLM.
+A Retrieval-Augmented Generation (RAG) chatbot for YouTube videos. It fetches a video transcript, splits it into chunks, stores embeddings in a FAISS index, retrieves the most relevant transcript chunks for a question, and generates an answer using an Ollama local LLM.
 
-## Requested Code Snippets And Explanations
+## Code overview
 
 ### 1) LLM initialization
 
