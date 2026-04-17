@@ -44,3 +44,8 @@ chain = query_gen_prompt | llm | StrOutputParser()
 
 Explanation:
 This composes a small LangChain pipeline where the prompt is sent to the LLM, and the raw output is converted to plain text by StrOutputParser. The resulting text is then split into separate query lines for retrieval.
+
+
+## Usage
+`python chatbot.py`
+
