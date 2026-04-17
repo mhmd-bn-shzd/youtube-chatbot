@@ -26,7 +26,7 @@ This function takes a single user question, creates multiple alternate search qu
 
 ```python
 query_gen_prompt = PromptTemplate(
-	template="""Generate 3 different search queries based on the user question to retrieve relevant information.
+    template="""Generate 3 different search queries based on the user question to retrieve relevant information.
 Return only the queries as a simple list, one per line, without numbering.
 
 User question: {question}"""
@@ -45,7 +45,24 @@ chain = query_gen_prompt | llm | StrOutputParser()
 Explanation:
 This composes a small LangChain pipeline where the prompt is sent to the LLM, and the raw output is converted to plain text by StrOutputParser. The resulting text is then split into separate query lines for retrieval.
 
+## Requirements
+
+- Python 3.10+ recommended
+- Ollama installed and running locally
+- Ollama model: llama3.2:3b
+- Dependencies listed in requirements.txt
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Pull the required Ollama model:
+
+```bash
+ollama pull llama3.2:3b
+```
 
 ## Usage
 `python chatbot.py`
-
